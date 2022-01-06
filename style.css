@@ -1,0 +1,22 @@
+body {
+    width: 100%;
+    text-align: center;
+}
+
+#wrap {
+    width: 960px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.input_text {
+    width: 20%;
+}
+
+.delete_btn {
+    margin-left: 10px;
+}
