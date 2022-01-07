@@ -8,8 +8,6 @@ $dsn = 'mysql:dbname=todolist;host=localhost;charset=utf8';
 $user = 'test';
 $password = 'test';
 
-var_dump($_POST);
-
 try {
     //DB接続
     $connect = new PDO($dsn, $user,$password);

@@ -21,7 +21,6 @@ try {
         <title>ToDo List</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     </head>
     <body>
         <div id="wrap">
@@ -47,6 +46,5 @@ try {
                 </div>
             </form>
         </div>
-        <script src="script.js"></script>
     </body>
 </html>
