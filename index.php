@@ -28,7 +28,6 @@ try {
             <form class="todo_list" action="connect.php" method="POST">
                 <div class="main">
                     <div class="input">
-                        <input type="hidden" name="data_id" value="">
                         <input type="text" name="text" class="input_text" placeholder="ここに入力してください。">
                         <button type="submit" class="add_btn" name="data_id" value="">新規追加</button>
                     </div>
