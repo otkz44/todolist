@@ -21,15 +21,16 @@ try {
         <title>ToDo List</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     </head>
     <body>
         <div id="wrap">
             <h1>ToDo List</h1>
-            <form class="todo_list" action="connect.php" method="POST">
+            <form class="todo_list" name="todo_list" action="connect.php" method="POST">
                 <div class="main">
                     <div class="input">
                         <input type="text" name="text" class="input_text" placeholder="ここに入力してください。">
-                        <button type="submit" class="add_btn" name="data_id" value="">新規追加</button>
+                        <button type="submit" class="add_btn" name="data_id" value="" onclick="return validate()">新規追加</button>
                     </div>
                     <div class="output">
                         <ul class="list">
@@ -45,5 +46,6 @@ try {
                 </div>
             </form>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
