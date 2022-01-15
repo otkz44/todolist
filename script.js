@@ -1,3 +1,9 @@
+//ボタン押下時の遷移先を変更
+$('.submit').click(function() {
+    $(this).parents('form').attr('action', $(this).data('action'));
+    $(this).parents('form').submit();
+});
+
 //必須入力チェック
 function validate() {
     //新規追加ボタンをクリック時に未入力の場合、エラー

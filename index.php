@@ -39,6 +39,7 @@ try {
                                 <li>
                                     <?= htmlspecialchars($row["message"], ENT_QUOTES)?>
                                     <button type="submit" class="delete_btn" name="data_id" value="<?= $row['id'] ?>">削除</button>
+                                    <button type="submit" class="submit btn edit_btn" data-action="edit.php" name="data_id" value="<?= $row['id'] ?>">編集</button>
                                 </li>
                             <?php } ?>
                         </ul>
