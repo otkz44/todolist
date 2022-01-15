@@ -3,20 +3,54 @@ body {
     text-align: center;
 }
 
+.base {
+    width: 30%;
+    padding: 8px 15px;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 7px 15px;
+}
+
 #wrap {
     width: 960px;
     margin: 0 auto;
     text-align: left;
 }
 
+.border {
+    padding: 10px;
+    border: 1px solid black;
+}
+
 li {
     margin-bottom: 10px;
 }
 
-.input_text {
-    width: 20%;
+.add_btn {
+    border: 1px solid #444444;
+    background-color: #BBBBBB;
+}
+
+.edit_btn {
+    border: 1px solid #444444;
+    background-color: #BBBBBB;
+}
+
+.edit_mode {
+    margin-top: 20px;
+}
+
+.back_btn {
+    margin-left: 10px;
+    border: 1px solid #444444;
+    background-color: #BBBBBB;
 }
 
 .delete_btn {
     margin-left: 10px;
+    border: 0px none;
+    background-color: #CC0033;
+    color: white;
 }
