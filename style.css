@@ -14,6 +14,10 @@ body {
     padding: 7px 15px;
 }
 
+.input {
+    padding-bottom: 15px;
+}
+
 #wrap {
     width: 960px;
     margin: 0 auto;
@@ -29,9 +33,15 @@ li {
     margin-bottom: 10px;
 }
 
+.display {
+    display: inline-block;
+    width: 28%;
+}
+
 .add_btn {
     border: 1px solid #444444;
     background-color: #BBBBBB;
+    margin-left: 6px;
 }
 
 .edit_btn {

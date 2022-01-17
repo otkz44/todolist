@@ -38,7 +38,7 @@ try {
                             <?php foreach ($stmt as $row) { ?> 
                                 <!-- DBから取得したデータをセットする -->
                                 <li>
-                                    <a class="base"><?= htmlspecialchars($row["message"], ENT_QUOTES)?></a>
+                                    <span class="base display"><?= htmlspecialchars($row["message"], ENT_QUOTES)?></span>
                                     <button type="submit" class="submit btn edit_btn" data-action="edit.php" name="data_id" value="<?= $row['id'] ?>">編集</button>
                                     <button type="submit" class="delete_btn btn" name="data_id" value="<?= $row['id'] ?>">削除</button>
                                 </li>
