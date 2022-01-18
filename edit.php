@@ -31,8 +31,8 @@ try {
     </head>
     <body>
         <div id="wrap">
-            <h1>ToDo List</h1>
-            <h2>Edit Mode</h2>
+            <h1>ToDoリスト</h1>
+            <h2>編集画面</h2>
             <form class="todo_list" name="todo_list" action="update.php" method="POST">
                 <div class="main">
                     <div class="output">

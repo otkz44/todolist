@@ -25,8 +25,8 @@ try {
     </head>
     <body>
         <div id="wrap">
-            <h1>ToDo List</h1>
-            <h2>Add Mode</h2>
+            <h1>ToDoリスト</h1>
+            <h2>登録画面</h2>
             <form class="todo_list" name="todo_list" action="connect.php" method="POST">
                 <div class="main">
                     <div class="input">
