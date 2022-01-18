@@ -39,7 +39,7 @@ try {
                             <?php foreach ($stmt as $row) { ?> 
                                 <!-- DBから取得したデータをセットする -->
                                 <input type="text" name="text" class="base" value="<?= htmlspecialchars($row["message"], ENT_QUOTES)?>"><br>
-                                <button type="submit" class="btn edit_btn edit_mode" name="data_id" value="<?= $row['id'] ?>">更新</button>
+                                <button type="submit" class="btn edit_btn edit_mode" name="data_id" value="<?= $row['id'] ?>" onclick="return validate()">更新</button>
                                 <button type="button" class="btn back_btn" onclick="history.back()">戻る</button>
                             <?php } ?>
                     </div>
