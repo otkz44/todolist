@@ -4,7 +4,7 @@ body {
 }
 
 .base {
-    width: 30%;
+    width: 80%;
     padding: 8px 15px;
 }
 
@@ -14,8 +14,20 @@ body {
     padding: 7px 15px;
 }
 
+.main-wrap {
+    /* width: 900px; */
+    border: 3px solid black;
+    border-radius: 30px;
+    padding: 10px;
+}
+
 .input {
     padding-bottom: 15px;
+    border-bottom: 3px solid black;
+}
+
+.output {
+    margin-bottom: 30px;
 }
 
 #wrap {
@@ -31,11 +43,13 @@ body {
 
 li {
     margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid black;
 }
 
 .display {
     display: inline-block;
-    width: 28%;
+    width: 80%;
 }
 
 .add_btn {

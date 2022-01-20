@@ -26,27 +26,29 @@ try {
     <body>
         <div id="wrap">
             <h1>ToDoリスト</h1>
-            <h2>登録画面</h2>
-            <form class="todo_list" name="todo_list" action="connect.php" method="POST">
-                <div class="main">
-                    <div class="input">
-                        <input type="text" name="text" class="base" placeholder="ここに入力してください。">
-                        <button type="submit" class="btn add_btn" name="data_id" value="" onclick="return validate()">登録</button>
+            <div class="main-wrap">
+                <h2>登録画面</h2>
+                <form class="todo_list" name="todo_list" action="connect.php" method="POST">
+                    <div class="main">
+                        <div class="input">
+                            <input type="text" name="text" class="base" placeholder="ここに入力してください。">
+                            <button type="submit" class="btn add_btn" name="data_id" value="" onclick="return validate()">登録</button>
+                        </div>
+                        <div class="output">
+                            <ul class="list">
+                                <?php foreach ($stmt as $row) { ?> 
+                                    <!-- DBから取得したデータをセットする -->
+                                    <li>
+                                        <span class="base display"><?= htmlspecialchars($row["message"], ENT_QUOTES)?></span>
+                                        <button type="submit" class="submit btn edit_btn" data-action="edit.php" name="data_id" value="<?= $row['id'] ?>">編集</button>
+                                        <button type="submit" class="delete_btn btn" name="data_id" value="<?= $row['id'] ?>">削除</button>
+                                    </li>
+                                <?php } ?>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="output">
-                        <ul class="list">
-                            <?php foreach ($stmt as $row) { ?> 
-                                <!-- DBから取得したデータをセットする -->
-                                <li>
-                                    <span class="base display"><?= htmlspecialchars($row["message"], ENT_QUOTES)?></span>
-                                    <button type="submit" class="submit btn edit_btn" data-action="edit.php" name="data_id" value="<?= $row['id'] ?>">編集</button>
-                                    <button type="submit" class="delete_btn btn" name="data_id" value="<?= $row['id'] ?>">削除</button>
-                                </li>
-                            <?php } ?>
-                        </ul>
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
         <script src="script.js"></script>
     </body>
